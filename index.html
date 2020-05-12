@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+<head>
+    <!-- this should be set to your own payment pointer -->
+    <meta name="monetization" content="twitter.xrptipbot.com/Rationalchaos" />
+  
+    <style>
+      .hidden {
+        display: none;
+      }
+    </style>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script>
+
+$(document).ready(function() {
+if (document.monetization) {
+        document.monetization.addEventListener('monetizationstart', () => {
+          document.getElementById('track1').classList.remove('hidden')
+          document.getElementById('track2').classList.remove('hidden')
+          document.getElementById('track3').classList.remove('hidden')
+          document.getElementById('track4').classList.remove('hidden')
+          document.getElementById('track5').classList.remove('hidden')
+          document.getElementById('track6').classList.remove('hidden')
+          document.getElementById('track7').classList.remove('hidden')
+          document.getElementById('track8').classList.remove('hidden')
+          document.getElementById('track9').classList.remove('hidden')
+          document.getElementById('track10').classList.remove('hidden')
+        })
+      }
+if (!document.monetization) {
+    alert("Please Note you can only listen to tracks if you are using Web Monetization")
+}
+})
+
+    </script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </head>
+  
+  <body>
+    <div class="jumbotron dark">
+        <h1 class="display-4">Web Monetization Album Track Preview Hiding
+        </h1>
+        <p class="lead">Prototype Web monetization Tool for hiding preview of tracks / audio element unless user is
+            Web Monetized. 
+        </p> 
+        <p>By <a href="http://www.chrisgodber.co.uk">Chris Godber</a></p>
+      </div>
+      <div class="row m-2">
+        <div class="col-md-6">
+            <h3>The Album by the Arist</h3>
+            <img src="album.jpg" class="img-fluid" alt="Responsive image">
+          </div>
+        <div class="col-md-6">
+            <h3>Track List</h3>
+        <ul class="list-group">
+            <li class="list-group-item">Track 1 - Bobs House    
+                <div class ="float-right">
+                        <audio controls class="hidden" id ="track1">
+                        <source src="track.mp3" type="audio/mpeg">
+                        Your browser does not support the audio tag.
+                    </audio>
+                </div>
+            </li>
+            <li class="list-group-item">Track 2 - Flamingo
+              
+                <div class ="float-right">
+                    <audio controls  class="hidden" id ="track2">
+                        <source src="track.mp3" type="audio/mpeg">
+                    Your browser does not support the audio tag.
+                </audio>
+            </div>
+            </li>
+            <li class="list-group-item">Track 3 - Craigs Spaceship
+        
+                <div class ="float-right">
+                    <audio controls class="hidden" id ="track3">
+                        <source src="track.mp3" type="audio/mpeg">
+                    Your browser does not support the audio tag.
+                </audio>
+            </div>
+            </li>
+            <li class="list-group-item">Track 4 - Bob Monkhouse
+         
+                <div class ="float-right">
+                    <audio controls class="hidden" id="track4">
+                        <source src="track.mp3" type="audio/mpeg">
+                    Your browser does not support the audio tag.
+                </audio>
+            </div>
+            </li>
+            <li class="list-group-item">Track 5 - Scary Clowns
+    
+                <div class ="float-right">
+                    <audio controls  class="hidden"  id="track5">
+                        <source src="track.mp3" type="audio/mpeg">
+                    Your browser does not support the audio tag.
+                </audio>
+            </div>
+            </li>
+            <li class="list-group-item">Track 6- High and Dry 
+            
+                <div class ="float-right">
+                    <audio controls  class="hidden"  id="track">
+                        <source src="track.mp3" type="audio/mpeg">
+                    Your browser does not support the audio tag.
+                </audio>
+            </div>
+            </li>
+            <li class="list-group-item">Track 7 - Pipecleaner
+        
+                <div class ="float-right">
+                    <audio controls class="hidden" id="track7">
+                        <source src="track.mp3" type="audio/mpeg">
+                    Your browser does not support the audio tag.
+                </audio>
+            </div>
+            </li>
+            <li class="list-group-item">Track 8 - Drill and Bass
+        
+                <div class ="float-right">
+                    <audio controls  class="hidden" id="track8">
+                        <source src="track.mp3" type="audio/mpeg">
+                    Your browser does not support the audio tag.
+                </audio>
+            </div>
+            </li>
+            <li class="list-group-item">Track 9 - Yo this is good
+     
+                <div class ="float-right">
+                    <audio controls  class="hidden" id="track9">
+                        <source src="track.mp3" type="audio/mpeg">
+                    Your browser does not support the audio tag.
+                </audio>
+            </div>
+            </li>
+            <li class="list-group-item">Track 10 - Ahhhhh yeh
+    
+                <div class ="float-right">
+                    <audio controls class="hidden" id="track10">
+                        <source src="track.mp3" type="audio/mpeg">
+                    Your browser does not support the audio tag.
+                </audio>
+            </div>
+            </li>
+          </ul>
+          </div>
+        
+        </div>
+    <hr />
+    <div id="exclusive" class="hidden">
+      Here's some exclusive content!
+    </div>
+    
+  </body>
+</html>
